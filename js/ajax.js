@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const response_p = await fetch("../json/product.json");
+    const response_p = await fetch("https://jungwoonan.github.io/0406_shop_async/json/product.json");
     if (!response_p.ok) throw new Error("상품 데이터를 불러오는 데 실패했습니다.");
-    const response_h = await fetch("../json/hit.json");
+    const response_h = await fetch("https://jungwoonan.github.io/0406_shop_async/json/hit.json");
     if (!response_h.ok) throw new Error("히트트 데이터를 불러오는 데 실패했습니다.");
 
     const data_p = await response_p.json();
